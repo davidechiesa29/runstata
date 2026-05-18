@@ -19,8 +19,13 @@
     font-family: "Kumbh Sans", sans-serif;
     color: #2a218f;
     text-decoration: none;
-    padding: 20px;
+    margin: 20px;
     font-weight: 600;
+    transition: font-size 0.3s ease;
+}
+
+.pageLink:hover {
+    font-size: 22px;
 }
 
 #miniLogo {
@@ -34,4 +39,9 @@
     );
     -webkit-background-clip: text;
     color: transparent;
+    transition: font-size 0.3s ease;
+}
+
+#miniLogo:hover {
+    font-size: 44px;
 }
