@@ -5,7 +5,7 @@ function Home() {
     <>
      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
         <h1 id="logo"> RunStata </h1>
-        
+        <p id="catchline"> Track your runs. Analyze your stats. </p>
       </div>
       <div id="triangleContainer">
         <div id="triangleLeft"></div>
