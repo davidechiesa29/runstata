@@ -1,0 +1,47 @@
+#navigationBar {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    padding-left: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bfc5f1;
+    justify-content: space-between;
+}
+.pageLink {
+    font-size: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    color: #2a218f;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 600;
+    transition: font-size 0.3s ease;
+}
+
+.pageLink:hover {
+    font-size: 22px;
+}
+
+#miniLogo {
+    font-size: 40px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 800;
+    background: linear-gradient(
+        90deg,
+        #a286ff,
+        #0022ff
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: font-size 0.3s ease;
+}
+
+#miniLogo:hover {
+    font-size: 44px;
+}
