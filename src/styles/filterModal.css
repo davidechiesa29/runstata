@@ -1,0 +1,132 @@
+#filterModal {
+  background-color: white;
+  opacity: 0.95;
+  width: 40%;
+  border-radius: 20px;
+  padding: 28px;
+  animation: slideIn 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filterModal-title {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #a286ff, #0022ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 0 4px 0;
+}
+
+.filterModal-label {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filterModal-row {
+  display: flex;
+  gap: 12px;
+}
+
+.filterModal-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.filterModal-field input,
+.filterModal-field select {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  padding: 8px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filterModal-field input:focus,
+.filterModal-field select:focus {
+  border-color: #a286ff;
+}
+
+.filterModal-checkboxGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterModal-checkbox {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.filterModal-checkbox:hover {
+  border-color: #a286ff;
+}
+
+.filterModal-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.filterModal-checkbox:has(input:checked) {
+  background: linear-gradient(90deg, #a286ff22, #0022ff22);
+  border-color: #a286ff;
+  color: #0022ff;
+  font-weight: 600;
+}
+
+#filterModal-clear {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  color: #555;
+  cursor: pointer;
+  flex: 1;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+#filterModal-clear:hover {
+  border-color: #a286ff;
+  color: #0022ff;
+}
+
+#filterModal-apply {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #a286ff, #0022ff);
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#filterModal-apply:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}

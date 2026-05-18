@@ -1,0 +1,49 @@
+#activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: white;
+  border-radius: 12px;
+  margin: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+#activity:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+#activity-title {
+  font-size: 24px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+#date {
+  color: rgb(39, 39, 39);
+  font-size: 16px;
+}
+
+#stats-box {
+}
+
+.stat {
+  margin: 20px;
+  
+}
+
+.stat-label {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.stat-info {
+  font-size: 20px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+}

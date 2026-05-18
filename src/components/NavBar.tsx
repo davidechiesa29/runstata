@@ -16,9 +16,6 @@ export default function NavBar() {
             <Link className="pageLink" to="/stats">
                 Statistics
             </Link>
-            <Link className="pageLink" to="/calculator">
-                Calculator
-            </Link>
             <Link className="pageLink" to="/about">
                 About
             </Link>

@@ -1,3 +1,73 @@
 body {
   background: linear-gradient(#ffffff, #7ba6e7);
+  background-attachment: fixed;
+}
+
+#header {
+  font-size: 40px;
+  transition: font-size 0.3s ease;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 800;
+  background: linear-gradient(
+      90deg,
+      #a286ff,
+      #0022ff
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#b-triangleContainer {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 100px);
+  top: 200px;
+}
+
+#b-triangle {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: linear-gradient(90deg, #a286ff, #0022ff);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#b-triangleLeft {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 60%;
+  top: 120px;
+  height: calc(100vh - 300px);
+  background: linear-gradient(90deg, #c43f39, #0022ff);
+  opacity: 0.6;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#b-triangleRight {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 45%;
+  height: calc(100vh - 300px);
+  top: 100px;
+  background: linear-gradient(90deg, #a286ff, #48bd6a);
+  opacity: 0.6;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
